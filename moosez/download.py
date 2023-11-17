@@ -98,6 +98,7 @@ def model(model_name, model_path):
         )
 
         with progress:
+            print(filename)
             with zipfile.ZipFile(filename, 'r') as zip_ref:
                 total_size = sum((file.file_size for file in zip_ref.infolist()))
                 task = progress.add_task(f"[white] Extracting {model_name}...", total=total_size)

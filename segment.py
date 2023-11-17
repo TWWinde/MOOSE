@@ -1,6 +1,6 @@
 from moosez.moosez import moose
 
-model_name = 'clin_ct_body'
+model_name = 'clin_ct_organs'
 input_dir = '/misc/no_backups/s1449/Medical-Images-Synthesis/results/medicals/MOOSEv2_data'
 output_dir = '/misc/no_backups/s1449/Medical-Images-Synthesis/results/medicals/moose_segment_results'
 accelerator = 'cuda'
